@@ -36,6 +36,6 @@ $(function () {
         $(".news-items > div").eq(index).addClass("actived").siblings().removeClass("actived");
         $(".news-items > div").eq(index).fadeIn("fast").siblings().fadeOut();
     });
-         
+
 
 });
