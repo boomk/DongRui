@@ -72,13 +72,23 @@ a {
     display: block;
 }
 #nav .navbar-nav li a {
-    width: 100px;
-    height: 38px;
+    width: 100%;
     text-align: center;
     margin: 37px 0;
+    position: relative;
+    display: block;
+    padding: 10px 25px;
 }
 
-
+@media (max-width: 768px) {
+    #nav .navbar-nav li a {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        display: block;
+        padding: 10px 4px;
+    }
+}
 
 /*
 
@@ -111,32 +121,33 @@ a {
 #introduce {
 background: url("../img/introduce_bg.png") top no-repeat;
 background-size: cover;
-margin-bottom: 103px;
+margin-bottom: 6%;
 }
 #introduce .row{
     margin:0;
 }
 #introduce .row > .left {
     /*height: 920px;*/
-    margin-top: 90px;
+    margin-top: 10%;
     padding-right: 20px;
 }
 
 #introduce .row > .left .intro-pic {
     width: 100%;
-    height: 560px;
-    background: url(../img/intro_pic1.png) no-repeat;
-    background-size: 100% 560px;
+    height: 100%;
     margin-top: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 15%;
 }
-#introduce .row > .col-sm-12 .intro-pic {
-    /* margin-top: 80px; */
+
+#introduce .row > .left .intro-pic img{
+    width: 100%;
+    height: 100%;
 }
 
 #introduce .row > .left .intro-text {
     color: #b8b8b8;
-    width: 520px;
+    width: 100%;
+    padding: 0 5%;
     float: right;
 }
 
@@ -147,11 +158,12 @@ margin-bottom: 103px;
 
 #introduce .row > .left .intro-text a {
     color: #0225db;
+    float: right;
 }
 
 #introduce .row > .right {
-    height: 920px;
-    margin-top: 85px;
+    height: 820px;
+    margin-top: 5%;
     position: relative;
 }
 
@@ -160,7 +172,7 @@ margin-bottom: 103px;
     padding: 0 10px;
     border: 1px #73570c dashed;
     color: #73570c;
-    margin-top: 170px;
+    margin-top: 20%;
     margin-right: 60px;
     text-align: center;
     float: right;
@@ -168,18 +180,18 @@ margin-bottom: 103px;
 
 @media (min-width: 1200px) {
   #introduce .right .title-e{
-     margin-right: 40%;
+     margin-right: 20%;
   }
 }
 
 #introduce .right .title-c {
     display:inline-block;
-    margin-top: 237px;
+    margin-top: 30%;
     color: #363636;
     font-size: 30px;
     float: right;
     margin-right: -50%;
-    margin-bottom: 60px;
+    margin-bottom: 5%;
 }
 
 
@@ -210,7 +222,6 @@ margin-bottom: 103px;
 
 #produce {
     background: url("../img/produce-bg.png") top center no-repeat;
-    height: 980px;
     width: 100%;
     background-size: cover;
 }
@@ -225,7 +236,7 @@ margin-bottom: 103px;
     width: 68px;
     height: 181px;
     top: 87px;
-    left: -46px;
+    left: -2%;
     background: url("../img/promenu.png") no-repeat;
 }
 #produce .nav-pills{
@@ -310,8 +321,8 @@ margin-bottom: 103px;
 }
 @media (max-width: 710px) {
     #introduce .right .title-c {
-        margin-right: -60%;
-        margin-top: 285px;
+
+        margin-top: 55%;
     }
 }
 
@@ -382,19 +393,18 @@ margin-bottom: 103px;
     height: 100%;
 }
 #news .news-slider .news-txt{
-    /*width: 50%;*/
     height: 410px;
-    border-top:10px solid #242b4e;
-    border-bottom:10px solid #242b4e;
+    border-top:12px solid #242b4e;
+    border-bottom:13px solid #242b4e;
     float: left;
 }
 #news .news-slider .news-txt .news-txt-det{
-    padding-left: 110px;
+    padding-left: 10%
 }
 #news .news-slider .news-txt .news-txt-det .title{
     display: inline-block;
     font-size: 24px;
-    padding: 45px 0;
+    padding: 45px 0 25px 0;
 }
 #news .news-slider .news-txt .news-txt-det .date{
     font-size:18px;
@@ -406,7 +416,7 @@ margin-bottom: 103px;
 
 
 #news .news-slider .news-txt .news-txt-det p{
-    padding: 35px 35px 0 0;
+    padding: 20px 20px 0 0;
     line-height: 34px;
 }
 #news .news-slider .news-txt .news-txt-det a{
@@ -419,6 +429,7 @@ margin-bottom: 103px;
     text-align: center;
     float: right;
     margin-right: 35px;
+    margin-bottom: 13%;
 }
 
 
@@ -445,7 +456,7 @@ margin-bottom: 103px;
 }
 
 #news .news-its ol{
-    padding: 58px 0 150px 0;
+    padding: 10% 0 10% 0;
     list-style: none;
         position: relative;
     overflow: hidden;
@@ -681,5 +692,5 @@ fieldset[disabled] .navbar-drkj .btn-link:focus {
     }
 }
 .narbar_right {
-    margin-left: 10%;
+    margin-left: 4%;
 }
